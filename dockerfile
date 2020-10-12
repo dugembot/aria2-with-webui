@@ -10,7 +10,8 @@ RUN yarn
 
 #ADD webui-aria2/ /app
 
-RUN apk add --no-cache git && \
+RUN rm -rf package*json && \
+    apk add --no-cache git && \
     git clone git@github.com:soulteary/webui-aria2 . && \
     apk del git && \
     rm -rf /var/cache/apk/* /tmp/*
