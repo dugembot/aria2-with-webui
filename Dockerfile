@@ -8,7 +8,7 @@ WORKDIR /app
 
 RUN npm install -g yarn && yarn
 
-ADD webui-aria2/ /app
+#ADD webui-aria2/ /app
 
 ADD ./patches/configuration.js /app/src/js/services/configuration.js
 ADD ./patches/rpc.js /app/src/js/services/rpc/rpc.js
