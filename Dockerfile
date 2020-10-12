@@ -6,7 +6,7 @@ ADD package-lock.json /app/package-lock.json
 
 WORKDIR /app
 
-RUN npm install -g yarn && yarn
+RUN yarn
 
 #ADD webui-aria2/ /app
 
