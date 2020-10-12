@@ -12,7 +12,7 @@ RUN yarn
 
 RUN apk add --no-cache git && \
     git clone https://github.com/soulteary/webui-aria2  /app \
-    apk del --purge git && \
+    apk del git && \
     rm -rf /var/cache/apk/* /tmp/*
 
 ADD ./patches/configuration.js /app/src/js/services/configuration.js
