@@ -1,8 +1,8 @@
 FROM node:11.12-alpine
 LABEL AUTHOR soulteary
 
-ADD webui-aria2/package.json /app/package.json
-ADD webui-aria2/package-lock.json /app/package-lock.json
+ADD package.json /app/package.json
+ADD package-lock.json /app/package-lock.json
 
 WORKDIR /app
 
