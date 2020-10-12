@@ -1,4 +1,4 @@
-FROM node:11.12-alpine
+FROM node:lts-alpine
 LABEL AUTHOR soulteary
 
 ADD package.json /app/package.json
