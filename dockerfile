@@ -3,7 +3,7 @@ LABEL AUTHOR soulteary
 WORKDIR /app
 
 RUN apk add --no-cache git && \
-    git clone git@github.com:soulteary/webui-aria2 . && \
+    git clone https://github.com/soulteary/webui-aria2 . && \
     apk del git && \
     rm -rf /var/cache/apk/* /tmp/*
 
